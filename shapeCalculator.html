@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="source/dial-pad.png">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/mainstyle.css">
+    <link rel="stylesheet" href="styles/shapestyle.css">
+    <title>This is JavaScipt</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <div class="icon-site"><img src="source/dial-pad.png" alt=""></div>
+            
+            <ul>
+                <li id="button"><a href="#"><img src="source/geometric.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="header">
+                <h1>This is JavaScipt</h1>
+                <p>by neitoo</p>
+                <h2>Калькулятор фигур</h2>
+                
+            </div>
+            <div class="interface">
+                <div class="choise">
+                    <label for="square"><input type="radio" name="choise-radio" id="square" value="1"><span class="orange">S </span> и <span class="orange">P</span> квадрата</label>
+                    <label for="rectangle"><input type="radio" name="choise-radio" id="rectangle" value="2"><span class="orange">S </span> и <span class="orange">P</span> прямоугольника</label>
+                    <label for="circle"><input type="radio" name="choise-radio" id="circle" value="3"><span class="orange">S </span> круга и <span class="orange">P</span> окружности</label>
+                    <label for="triangle"><input type="radio" name="choise-radio" id="triangle" value="4"><span class="orange">S </span> треугольника по 3 сторонам</label>
+                </div>
+                <div class="input">
+                    <input type="hidden" placeholder="Введите величину a" name="choise-number" id="aOrR">
+                    <input type="hidden" placeholder="Введите величину b" name="choise-number" id="b">
+                    <input type="hidden" placeholder="Введите величину c" name="choise-number" id="c">
+                    <input type="hidden" class="button-answer" value="Решить" id="btn-answer">
+                </div>
+                <div class="output">
+                    <p class="ot">Ответ</p>
+                    <p id="result"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/mainscript.js"></script>
+    <script src="scripts/choise.js"></script>
+</body>
+</html>
