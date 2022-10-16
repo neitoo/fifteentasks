@@ -49,18 +49,18 @@ for(let radio of radios){
     });
 }
 
-function sSquare(a){ let res = Math.pow(Number(a),2); return res.toFixed(3);}
-function pSquare(a){ let res = 4 * Number(a); return res.toFixed(3);}
+function sSquare(a){ let res = Math.pow(a,2); return res.toFixed(3);}
+function pSquare(a){ let res = 4 * a; return res.toFixed(3);}
 
-function sRectangle(a,b){ let res = Number(a) * Number(b); return res.toFixed(3);}
-function pRectangle(a,b){ let res = (Number(a) + Number(b)) * 2; return res.toFixed(3);}
+function sRectangle(a,b){ let res = a * b; return res.toFixed(3);}
+function pRectangle(a,b){ let res = (a + b) * 2; return res.toFixed(3);}
 
-function sCircle(r){let res = PI * Math.pow(Number(r),2); return res.toFixed(3);}
-function pCircle(r){let res = 2 * PI * Number(r); return res.toFixed(3)}
+function sCircle(r){let res = PI * Math.pow(r,2); return res.toFixed(3);}
+function pCircle(r){let res = 2 * PI * r; return res.toFixed(3)}
 
 function sTriangle(a,b,c){
-    let p = (Number(a)+Number(b)+Number(c))/2;
-    let s = Math.sqrt(p*(p-Number(a))*(p-Number(b))*(p-Number(c)))
+    let p = (a+b+c)/2;
+    let s = Math.sqrt(p*(p-a)*(p-b)*(p-c))
     return s.toFixed(3);
 }
 

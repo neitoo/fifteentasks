@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="source/dial-pad.png">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/mainstyle.css">
+    <link rel="stylesheet" href="styles/shapestyle.css">
+    <title>This is JavaScript</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <div class="icon-site"><a href="index.html"><img src="source/dial-pad.png" alt=""></a></div>
+            
+            <ul>
+                <li class="button"><a href="shapeCalculator.html"><img src="source/geometric.png" alt=""></a></li>
+                <li class="button active"><a href="#"><img src="source/math.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="header">
+                <h1>This is JavaScript</h1>
+                <p>by neitoo</p>
+                <h2>Математический калькулятор</h2>
+                
+            </div>
+            <div class="interface">
+                <div class="choise">
+                    <label for="square-root"><input type="radio" name="choise-radio" id="square-root" value="1"><span class="orange">К</span>вадратные корни уравнения</label>
+                    <label for="pythagorean-triple"><input type="radio" name="choise-radio" id="pythagorean-triple" value="2"><span class="orange">Т</span>ройка Пифагора</label>
+                    <label for="divisors"><input type="radio" name="choise-radio" id="divisors" value="3"><span class="orange">Д</span>елители числа</label>
+                    <label for="common-divisors"><input type="radio" name="choise-radio" id="common-divisors" value="4"><span class="orange">О</span>бщие делители чисел</label>
+                    <label for="min-common-divisors"><input type="radio" name="choise-radio" id="min-common-divisors" value="5"><span class="orange">Н</span>аименьший делитель чисел</label>
+                    <label for="max-common-divisors"><input type="radio" name="choise-radio" id="max-common-divisors" value="5"><span class="orange">Н</span>аибольший делитель чисел</label>
+                </div>
+                <div class="input">
+                    <input type="hidden" placeholder="Введите значение a" name="choise-number" id="a">
+                    <input type="hidden" placeholder="Введите значение b" name="choise-number" id="b">
+                    <input type="hidden" placeholder="Введите значение c" name="choise-number" id="c">
+                    <input type="hidden" class="button-answer" value="Решить" id="btn-answer">
+                </div>
+                <div class="output">
+                    <p class="ot">Ответ</p>
+                    <p id="result"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/math.js"></script>
+</body>
+</html>

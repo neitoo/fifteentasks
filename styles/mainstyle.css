@@ -23,15 +23,18 @@ body{
 }
 .menu li img{
     padding: 10px;
-    width: 100%;
+    width: 7vh;
 }
-.hover{
+.menu li{
+    margin-bottom: 10px;
+}
+.button:hover, .button.active{
     background-color: #FF844B;
     border-radius: 10px;
 }
 .icon-site img{
     margin:20px 0 40px 0;
-    width: 70%;
+    width: 6vh;
 }
 .content{
     display: flex;

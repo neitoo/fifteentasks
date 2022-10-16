@@ -49,14 +49,19 @@ input[type="number"]{
     border-radius: 10px;
     padding: 5px 50px 5px 50px;
 }
-
+.button-answer:hover{
+    color: #e87945;
+    background-color: #ff844b78;
+}
+.button-answer:active{
+    background-color: #ff844bbc;
+}
 .orange{
     color: #e87945;
 }
-.hover-button{
-    background-color: #ff844b78;
+
+.output{
+    word-break: break-all;
 }
-.active-button{
-    background-color: #ff844bbc;
-}
+
 
