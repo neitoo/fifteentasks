@@ -4,7 +4,7 @@
     list-style: none;
     
 }
-.choise,.input,.output{
+.choise,.input,.output, .text, .info{
     width: calc(100% / 3 - 13px);
     height: 100%;
     display: flex;
@@ -14,14 +14,20 @@
     line-height: 2;
     font-weight: 500;
 }
+.text{
+    flex-grow: 3;
+}
+.info{
+    flex-grow: 1;
+}
 .choise{
     border-right: 2px solid #b7b7b7;
 }
-.input{
+.input,.input-text{
     align-items: center;
     
 }
-.output{
+.output,.output-info{
     border-left: 2px solid #b7b7b7;
     align-items: center;
 }
@@ -33,35 +39,30 @@ p{
 }
 
 input[type="number"]{
-    border: 2px solid #FF844B;
+    background-color: #dadedd47;
+    border: 1px solid #c1c1c1;
     width: 60%;
     border-radius: 10px;
     margin: 10px 0 10px 0;
     padding: 10px;
 }
 
-.button-answer{
-    background-color: #f0f8ff00;
-    font-weight: 700;
-    font-size: 20px;
-    color: #FF844B;
-    border: 2px solid #FF844B;
+textarea[name="text-form"]{
+    resize: none;
+    background-color: #dadedd47;
+    border: 1px solid #c1c1c1;
+    font-size: 15px;
+    width: 80%;
     border-radius: 10px;
-    padding: 5px 50px 5px 50px;
+    margin: 10px 0 10px 0;
+    padding: 10px;
 }
-.button-answer:hover{
-    color: #e87945;
-    background-color: #ff844b78;
-}
-.button-answer:active{
-    background-color: #ff844bbc;
-}
-.orange{
-    color: #e87945;
+textarea[name="text-form"]:focus, input[type="number"]:focus{
+    outline: 1px;
+    border: 1px solid #767676;
 }
 
-.output{
-    word-break: break-all;
-}
+
+
 
 

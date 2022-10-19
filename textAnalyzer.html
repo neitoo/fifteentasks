@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="source/dial-pad.png">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/mainstyle.css">
+    <link rel="stylesheet" href="styles/functionpagesstyle.css">
     <title>This is JavaScript</title>
 </head>
 <body>
@@ -17,20 +18,28 @@
             <ul>
                 <li class="button"><a href="shapeCalculator.html"><img src="source/geometric.png" alt=""></a></li>
                 <li class="button"><a href="mathCalculator.html"><img src="source/math.png" alt=""></a></li>
-                <li class="button"><a href="textAnalyzer.html"><img src="source/search.png" alt=""></a></li>
+                <li class="button active"><a href="#"><img src="source/search.png" alt=""></a></li>
             </ul>
         </div>
         <div class="content">
             <div class="header">
                 <h1>This is JavaScript</h1>
                 <p>by neitoo</p>
-                <h2>Добро пожаловать!</h2>
+                <h2>Анализатор текста</h2>
                 
             </div>
             <div class="interface">
-                
+                <div class="input-text text">
+                    <textarea name="text-form" id="tarea" cols="90" rows="30" placeholder="Введите текст для анализа (чувствителен к пробелам после запятой и точки)"></textarea>
+                    <input type="button" class="button-answer" value="Проверить" id="btn-answer">
+                </div>
+                <div class="output info">
+                    <p class="ot">Результат</p>
+                    <p id="result"></p>
+                </div>
             </div>
         </div>
     </div>
+    <script src="scripts/choise.js"></script>
 </body>
 </html>
